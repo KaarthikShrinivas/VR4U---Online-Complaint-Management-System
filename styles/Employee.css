@@ -1,0 +1,36 @@
+#map {
+  height: 100%;
+}
+.Complaint-section table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.Complaint-section td,
+.Complaint-section th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.Complaint-section tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.Complaint-section tr:hover {
+  background-color: #ddd;
+}
+.Complaint-section tbody {
+  background-color: white;
+}
+.Complaint-section td {
+  color: black;
+}
+.Complaint-section th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(30, 57, 179);
+  color: white;
+}
