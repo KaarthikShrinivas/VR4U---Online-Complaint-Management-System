@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Marker Clustering</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+
+    <style type="text/css">
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function initMap() {
+            var locations = [];
+            var latitu = parseFloat(document.getElementById("lat").value);
+            var longi = parseFloat(document.getElementById("long").value);
+            locations.push({ lat: latitu, lng: longi });
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: { lat: 13.0827, lng: 80.2707 },
+            });
+            // Create an array of alphabetical characters used to label the markers.
+            const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            // Add some markers to the map.
+            // Note: The code uses the JavaScript Array.prototype.map() method to
+            // create an array of markers based on a given "locations" array.
+            // The map() method here has nothing to do with the Google Maps API.
+            const markers = locations.map((location, i) => {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length],
+                });
+            });
+            // Add a marker clusterer to manage the markers.
+            new MarkerClusterer(map, markers, {
+                imagePath:
+                    "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+            });
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h2>Maps</h2>
+    <div>
+        <input type="text" placeholder="address" id="lat">
+        <input type="text" placeholder="address" id="long">
+        <button type="submit" onclick="initMap()">Submit</button>
+    </div>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKKC2pDqIpw_U9CkIcMfCwHL8C7SnhEd0
+    &callback=initMap&libraries=&v=weekly" async></script>
+</body>
+
+</html>
