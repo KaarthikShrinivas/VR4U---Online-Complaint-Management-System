@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title {
+  background-color: #210070;
+  color: white;
+}
+.navbar {
+  background-color: #210070;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+}
+.nav-item {
+  padding: 10px 18px;
+}
+#title-row {
+  margin-top: 25px;
+  padding: 5% 5%;
+}
+
+a.nav-link:hover {
+  color: white !important;
+}
+
+#features {
+  padding: 7% 15%;
+}
+.feature-box {
+  text-align: center;
+  padding: 6%;
+}
+h3 {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container1 .card1 p {
+  color: white;
+}
+.icon {
+  color: #210070;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #7adac0;
+}
+
+#testimonials {
+  text-align: center;
+  background-color: #210070;
+}
+.card {
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item {
+  padding: 8% 15%;
+}
+#footer {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  color: black;
+}
+
+.footer-icons {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: rgb(73, 15, 233);
+}
+
+.footer-icons:hover {
+  color: rgb(0, 255, 149);
+}

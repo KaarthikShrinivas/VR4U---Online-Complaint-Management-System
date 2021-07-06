@@ -1,0 +1,88 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #title {
+    background-color: #210070;
+    color: white;
+  }
+  .navbar {
+    background-color: #210070;
+  }
+  .container-fluid {
+    padding: 3% 15%;
+  }
+  
+  .navbar-brand {
+    font-size: 2.5rem;
+  }
+  .nav-item {
+    padding: 10px 18px;
+    padding-bottom: 0px;
+
+  }
+  #title-row {
+    margin-top: 25px;
+    padding: 5% 5%;
+  }
+  
+  a.nav-link:hover {
+    color: white !important;
+  }
+  .profile{
+    background-image: linear-gradient(to left, blue, green, orange, red);
+    -webkit-background-clip: text;
+    background-position:right;
+    color:transparent;
+    margin-left:250px;
+    padding-top:20px;
+    
+    font-weight:bolder;
+    font-size:20px;
+    line-height:30px;
+    }
+    .profile_title{
+        margin-left:300px;
+        padding-top:10px;
+    }
+    .btn{
+        margin-left:100px;
+        padding:10px;
+        background-color: #0c2326;
+        font-weight: bolder;
+        color:white;
+        border-radius: 10px;
+        border: 1px solid;
+        transition: transform .2s;
+}
+.btn:hover
+{
+cursor: pointer;
+background: #4fcaff;
+color: #000;
+transform: scale(1.25);
+}
+.input-box{
+    border:none;
+    font-size:20px;
+    font-weight:bolder;
+    max-width:800px;
+    outline:none;
+}
+    #passd
+        {
+            
+            color:red;
+            background-color:black;
+            line-height:25px;
+            height:110px;
+            width:380px;
+            display: none;
+            left:600px;
+            top:520px;
+            border-radius:10px;
+            border:1px solid black;
+            text-align:left;
+            font-family:'Lucida Sans';
+            font-size:13px;
+        }
